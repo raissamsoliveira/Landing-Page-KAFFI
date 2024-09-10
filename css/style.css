@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, 
+h2, 
+h3 {
+    color: #362417;
+}
+
+p {
+    color: #000500;
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #5e503f;
+    padding: 0.2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    margin-top: 5px;
+    position: absolute;
+    left: 30px;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 30px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.navbar-items a:hover {
+    color: #e4d4c1;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #f1dabf;
+    border-radius: 5px;
+}
+
+.navbar-items li .default-btn {
+    color: #362417;
+}
+
+.navbar-items li .default-btn:hover {
+    color: #824f2b;
+}
+
+/* main banner */
+
+.main-banner {
+    background-image: url(/assets/img/capa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    opacity: 0.93;
+}
+
+.main-banner h1, 
+.main-banner p {
+    color: #fffbff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #362417 3px 2px;
+    
+}
+
+.main-banner h1 {
+    font-size: 124px;
+}
+
+.main-banner p {
+    font-size: 32px;
+}
+
+
+/* services */
+.services-container {
+    padding: 5rem 0;
+    display: block;
+    text-align: center;
+}
+
+.services-container h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.services-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li {
+    flex: 1 1 200px;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+
+
+.services-container h3 {
+    margin-bottom: 25px;
+}
+
+.services-container p {
+    line-height: 24px;
+}
+
+/* prices and plans */
+.pricing-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 36px;
+}
+
+.pricing-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 50px auto 0;
+}
+
+.plan {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #362417;
+    color: #fffbff;
+}
+
+.plan .price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f1dabf;
+    color: #362417;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffbff;
+    background-color: #5e503f;
+    padding: 50px 0;
+}
+
+.plan .plan-btn {
+    background-color: #f1dabf;
+    color: #362417;
+    font-size: 20px;
+    font-weight: bold;
+    height: 55px;
+    width: 250px;
+    margin: 0 auto -50px;
+    line-height: 55px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 45px;
+}
+
+/* newsletter */
+
+.newsletter-container{
+    background-color: #362417;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.newsletter-container h2 {
+    color: #fffbff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.newsletter-container p {
+    color: #f1dabf;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.newsletter-container input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.newsletter-container input[type="email"] {
+    width: 40%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.newsletter-container input[type="submit"] {
+    background-color: #f1dabf;
+    padding: 15px 30px;
+    color: #362417;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.newsletter-container input[type="submit"]:hover {
+    opacity: 1;
+}
+
+/* contactform */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #362417;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 600px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: #f1dabf;
+    color: #362417;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.contact-container input[type="submit"]:hover {
+    opacity: 1;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px o 100px;
+    background-color: #5e503f;
+    padding: 20px 35px;
+}
+
+footer p {
+    color: #fffbff;
+}
+
+
+/* responsividade */
+@media (max-width:1100px) {
+    .plans-container {
+        width: 95%;
+    }
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width:900px) {
+    .main-banner p {
+        padding: 0;
+    }
+    .newsletter-container {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width:576px) {
+    .navbar-items {
+        font-size: 10px;
+    }
+    .main-banner h1{
+        font-size: 70px;
+        width: 100%;
+        padding: 0rem;
+    }
+    .services-container .service ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .plans-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 70px;
+    }
+    .contact-container {
+        padding: 3rem 2rem ;
+    }
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .newsletter-container input[type="email"] {
+        width: 300px;
+    }
+}
+
+
